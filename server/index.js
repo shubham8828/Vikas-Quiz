@@ -4,7 +4,13 @@ import cors from 'cors'; // Import cors
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Enable CORS for all routes
+app.use(cors(
+  {
+    origin: ["https://vikas-quiz-rqt4.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+}
+)); // Enable CORS for all routes
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://vikas123:SpGBtqkOpLf7Sb2v@cluster0.zaohd.mongodb.net/Quiz?retryWrites=true&w=majority&appName=Cluster0', {
