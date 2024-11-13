@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: ["https://vikas-quiz-rqt4.vercel.app/"],
+    origin: ["https://vikas-quiz-rqt4.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }
