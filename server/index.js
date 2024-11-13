@@ -89,6 +89,11 @@ app.get('/api/quizzes', async (req, res) => {
     }
 });
 
+app.get('/', async (req, res) => {
+  res.send("Hello")
+});
+
+
 // Start the server
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
