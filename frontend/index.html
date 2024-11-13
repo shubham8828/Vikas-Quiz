@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b14ea77ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <nav>
+            <ul>
+                <li class="active-tab"><a href="#"><i class="fa-solid fa-house">&nbsp;&nbsp;&nbsp;</i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;&nbsp;Quiz</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;&nbsp;About</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i>&nbsp;&nbsp;&nbsp;Analysis</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</a></li>
+            </ul>
+        </nav>
+    
+    <div class="back">    </div>
+    
+    <div class="main-container">
+        <div class="row1">
+            <div class="sub-title">
+                <h1>Best Of Luck! <i class="fa-solid fa-thumbs-up"></i> </h1>
+            </div>
+
+            <div id="loading-container">
+                <div id="loading-bar"></div>
+            </div>
+            
+            
+            <div id="quiz-container" class="quiz-container"></div>
+        </div>
+
+        <div class="row2">
+            <button class="btn" id="submitQ">
+                Submit
+            </button>
+        </div>
+
+        <div class="results">
+            <h2> - RESULTS -</h2>
+            <div class="result-container">          
+                
+                <div class="circular-progress">
+                    <div class="outer-circle">
+                        <span class="percentage" id="percentage">0%</span>
+                    </div>
+                </div>
+
+                <div class="analysis">
+                    <p>Total Questions: <span id="total-questions">0</span></p>
+                    <p>Correct Answers: <span id="correct-questions">0</span></p>
+                    <p>Incorrect Answers: <span id="wrong-questions">0</span></p>
+                    <p>Time Taken: <span id="time-taken">0</span></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
