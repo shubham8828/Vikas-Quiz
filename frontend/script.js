@@ -28,7 +28,7 @@ async function fetchQuizData() {
         }, 500);
 
         // Fetch data from the API
-        const response = await fetch('http://localhost:3001/api/quizzes');
+        const response = await fetch('https://vikas-quiz.vercel.app/api/quizzes');
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
